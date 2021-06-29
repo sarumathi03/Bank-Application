@@ -1,2 +1,2 @@
-# Bank-Application
- An application built using JavaScript on Higher order array methods.
+# Banking-Application
+ A simple banking application built using JavaScript on Higher order array methods.
