@@ -69,11 +69,9 @@ const filterRich = function () {
   updateDOM();
 };
 //sorting
-const user = function(){
-  data = data.sort((user) => user.balance);
-//user.sort();
-//console.log(user);
-updateDOM();
+const sortData = function(){
+  data.sort((a,b) => (a.balance - b.balance));
+  updateDOM();
 };
 
 
@@ -102,5 +100,5 @@ btnAddUser.addEventListener('click', getRandomUser);
 btnDouble.addEventListener('click', doubleBalance);
 
 btnFilter.addEventListener('click', filterRich);
-btnFilter.addEventListener('click', sort);
+btnSort.addEventListener('click', sortData);
 btnTotal.addEventListener('click', totalBalance);
